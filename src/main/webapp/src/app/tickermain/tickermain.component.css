@@ -1,0 +1,13 @@
+.border-3{
+    border-radius: 1.25rem;
+}
+#card{
+    width: 14rem;
+    margin: 10px 10px 10px 10px;
+}
+.box-shadow-available{
+    box-shadow: 1px 1px 1px 1px forestgreen;
+}
+.box-shadow-engaged{
+    box-shadow: 1px 1px 1px 1px rgb(190, 17, 17);
+}

@@ -1,0 +1,20 @@
+<app-ticker-action [parentData]="tickerId"></app-ticker-action>
+<div class="container-fluid">
+    <h1>Ticker Home</h1>
+    <a href="admin">Admin</a>
+    <a href="logout">Logout</a>
+    <div class="row">
+        <div *ngFor="let ticker of tickerList">
+            <div id="card" [ngClass]="ticker.status === 'AVAILABLE' ? 'card text-right col-sm border-success mb-3 border-3 box-shadow-available' : 'card text-right col-sm border-danger mb-3 border-3 box-shadow-engaged'">
+                <div class="card-body">
+                    <h5 class="card-title">{{ticker.tickerId}}</h5>
+                    <h6 class="card-text">{{ticker.currentUser}}</h6>
+                    <p class="card-text">{{ticker.previousUser}}</p>
+                    <p class="card-text">{{ticker.status}}</p>
+                    <a href="#" (click)="OnAction(ticker)" class="btn btn-primary" data-toggle="modal"
+                        data-target="#mymodal">Action</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
