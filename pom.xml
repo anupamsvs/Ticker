@@ -48,7 +48,7 @@
 			<version>8.0.18</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -74,6 +74,6 @@
 		</plugins>
 	</build>
 
-	<packaging>war</packaging>
+	<!--<packaging>war</packaging>-->
 
 </project>
